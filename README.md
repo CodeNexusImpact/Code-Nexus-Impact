@@ -1,4 +1,4 @@
-# 🌐 CodeNexus Impact - Manual de Desenvolvimento & Guia Git
+# 🌐 Code Nexus Impact - Manual de Desenvolvimento & Guia Git
 
 Guia prático e completo com pré-requisitos, instruções de execução local e fluxo de trabalho com Git e GitHub (branches, commits e Pull Requests).
 
