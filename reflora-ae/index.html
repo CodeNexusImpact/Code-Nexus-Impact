@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflora-aê | Gestão de Sementes e Mudas • CodeNexus Impact</title>
+    <title>Reflora EcoData | SaaS de Gestão e Rastreabilidade de Sementes e Mudas</title>
     <meta name="description"
-        content="O Reflora-aê é a plataforma digital de gestão participativa para produção de mudas de árvores nativas e bancos de sementes no semiárido.">
+        content="Plataforma SaaS multi-tenant focada na gestão ponta-a-ponta de sementes, viveiros e redes de reflorestamento para instituições, governos e ONGs.">
 
-    <!-- Anti-FOUC Theme Script (Sincronizado com CodeNexus) -->
+    <!-- Anti-FOUC Theme Script -->
     <meta name="color-scheme" content="dark light">
     <script>
         function toggleTheme() {
@@ -35,9 +35,9 @@
 
     <!-- Open Graph / Redes Sociais -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Reflora-aê | Gestão Digital de Sementes e Mudas">
+    <meta property="og:title" content="Reflora EcoData | SaaS Multi-Tenant para Reflorestamento">
     <meta property="og:description"
-        content="Software de gestão participativa 100% online que organiza a produção de mudas nativas e o banco de sementes.">
+        content="Plataforma inteligente para gestão de redes de viveiros, sementes e governança ESG institucional.">
     <meta property="og:image" content="./assets/favicon.svg">
 
     <!-- Favicon Moderno & Responsivo -->
@@ -78,38 +78,13 @@
         }
     </script>
     <style>
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #0F172A;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #10B981;
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #059669;
-        }
-
-        .nav-scrolled {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        }
-        
-        .dark .nav-scrolled {
-            background-color: rgba(11, 17, 32, 0.96) !important;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
-        }
-
-        html:not(.dark) .nav-scrolled {
-            background-color: rgba(255, 255, 255, 0.97) !important;
-            border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important;
-            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0F172A; }
+        ::-webkit-scrollbar-thumb { background: #10B981; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #059669; }
+        .nav-scrolled { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); }
+        .dark .nav-scrolled { background-color: rgba(11, 17, 32, 0.96) !important; border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important; }
+        html:not(.dark) .nav-scrolled { background-color: rgba(255, 255, 255, 0.97) !important; border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important; }
     </style>
 </head>
 
@@ -119,22 +94,21 @@
     <header id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/95 text-slate-900 border-b border-slate-200/80 shadow-sm dark:bg-nexus-darker/90 dark:text-white dark:border-slate-800 backdrop-blur-md py-3.5">
         <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
             <a href="#" class="font-display font-bold text-2xl tracking-tight flex items-center gap-2.5 group">
-                <img src="./assets/favicon.svg" alt="Reflora-aê" class="w-8 h-8 rounded-lg shadow-sm group-hover:scale-105 transition-transform">
-                <div class="flex items-center text-slate-900 dark:text-white"><span>REFLORA-</span><span class="text-nexus-leaf dark:text-nexus-neon">AÊ</span></div>
-                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-nexus-emerald/20 dark:text-nexus-neon border border-emerald-300 dark:border-nexus-emerald/30 ml-1 hidden sm:inline-block">Semiárido</span>
+                <img src="./assets/favicon.svg" alt="Reflora EcoData" class="w-8 h-8 rounded-lg shadow-sm group-hover:scale-105 transition-transform">
+                <div class="flex items-center text-slate-900 dark:text-white"><span>REFLORA</span><span class="text-nexus-leaf dark:text-nexus-neon ml-1">ECODATA</span></div>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-nexus-emerald/20 dark:text-nexus-neon border border-emerald-300 dark:border-nexus-emerald/30 ml-1 hidden sm:inline-block">SaaS Multi-Tenant</span>
             </a>
 
             <nav class="hidden md:flex items-center gap-7 font-medium text-sm">
-                <a href="#projeto" class="text-slate-600 hover:text-nexus-leaf dark:text-slate-300 dark:hover:text-nexus-neon transition-colors">O Sistema</a>
-                <a href="#mvv" class="text-slate-600 hover:text-nexus-leaf dark:text-slate-300 dark:hover:text-nexus-neon transition-colors">Missão & Valores</a>
+                <a href="#projeto" class="text-slate-600 hover:text-nexus-leaf dark:text-slate-300 dark:hover:text-nexus-neon transition-colors">A Plataforma</a>
+                <a href="#mvv" class="text-slate-600 hover:text-nexus-leaf dark:text-slate-300 dark:hover:text-nexus-neon transition-colors">Propósito</a>
                 <a href="#modulos" class="text-slate-600 hover:text-nexus-leaf dark:text-slate-300 dark:hover:text-nexus-neon transition-colors">Módulos</a>
-                <a href="#tecnologia" class="text-slate-600 hover:text-nexus-leaf dark:text-slate-300 dark:hover:text-nexus-neon transition-colors">Tecnologia</a>
+                <a href="#tecnologia" class="text-slate-600 hover:text-nexus-leaf dark:text-slate-300 dark:hover:text-nexus-neon transition-colors">Arquitetura</a>
                 <a href="#cadastro" class="text-slate-600 hover:text-nexus-leaf dark:text-slate-300 dark:hover:text-nexus-neon transition-colors">Contato</a>
             </nav>
 
             <div class="hidden md:flex items-center gap-3">
-                <!-- Theme Toggle Button Desktop -->
-                <button id="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Alternar tema claro e escuro" title="Alternar Modo Claro / Escuro"
+                <button id="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Alternar tema"
                     class="p-2.5 rounded-full text-slate-600 hover:text-nexus-leaf hover:bg-slate-100 dark:text-slate-300 dark:hover:text-amber-400 dark:hover:bg-slate-800/80 transition-all border border-slate-200 dark:border-slate-700 cursor-pointer shadow-sm">
                     <svg id="theme-toggle-light-icon" class="hidden dark:block w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd" />
@@ -144,22 +118,13 @@
                     </svg>
                 </button>
 
-                <a href="../index.html"
-                    class="text-xs text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-nexus-neon flex items-center gap-1 transition-colors px-3 py-2 font-medium">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m15 18-6-6 6-6" />
-                    </svg>
-                    CodeNexus Impact
-                </a>
                 <a href="#cadastro"
-                    class="bg-nexus-emerald hover:bg-emerald-600 text-white dark:text-nexus-dark dark:hover:bg-emerald-400 transition-all px-5 py-2 rounded-full font-bold text-sm shadow-[0_0_15px_rgba(16,185,129,0.2)] hover:shadow-[0_0_20px_rgba(16,185,129,0.4)]">
-                    Cadastrar Viveiro
+                    class="bg-nexus-emerald hover:bg-emerald-600 text-white dark:text-nexus-dark dark:hover:bg-emerald-400 transition-all px-5 py-2 rounded-full font-bold text-sm shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+                    Contratar SaaS
                 </a>
             </div>
 
             <div class="flex items-center gap-2 md:hidden">
-                <!-- Theme Toggle Mobile -->
                 <button id="theme-toggle-mobile" type="button" onclick="toggleTheme()" aria-label="Alternar tema"
                     class="p-2 rounded-full text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 cursor-pointer">
                     <svg id="theme-toggle-light-icon-m" class="hidden dark:block w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
@@ -182,21 +147,17 @@
         </div>
 
         <!-- Menu Mobile -->
-        <div id="mobile-nav"
-            class="hidden md:hidden absolute top-full left-0 w-full bg-white dark:bg-nexus-darker border-t border-slate-200 dark:border-slate-800 shadow-2xl transition-all">
+        <div id="mobile-nav" class="hidden md:hidden absolute top-full left-0 w-full bg-white dark:bg-nexus-darker border-t border-slate-200 dark:border-slate-800 shadow-2xl transition-all">
             <nav class="flex flex-col p-6 text-center gap-4">
-                <!-- Mobile Theme Toggle Button with Text -->
-                <button onclick="toggleTheme()" type="button" class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm transition-all shadow-sm">
+                <button onclick="toggleTheme()" type="button" class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm shadow-sm">
                     <span class="block dark:hidden">🌙 Alternar para Modo Escuro</span>
                     <span class="hidden dark:block">☀️ Alternar para Modo Claro</span>
                 </button>
-
-                <a href="#projeto" class="text-slate-700 dark:text-slate-300 hover:text-nexus-leaf dark:hover:text-nexus-neon py-2 font-medium">O Sistema</a>
-                <a href="#mvv" class="text-slate-700 dark:text-slate-300 hover:text-nexus-leaf dark:hover:text-nexus-neon py-2 font-medium">Missão & Valores</a>
-                <a href="#modulos" class="text-slate-700 dark:text-slate-300 hover:text-nexus-leaf dark:hover:text-nexus-neon py-2 font-medium">Módulos</a>
-                <a href="#tecnologia" class="text-slate-700 dark:text-slate-300 hover:text-nexus-leaf dark:hover:text-nexus-neon py-2 font-medium">Tecnologia</a>
-                <a href="#cadastro" class="bg-nexus-emerald text-white dark:text-nexus-dark rounded-full py-3 font-bold mt-2 shadow-md">Contato / Cadastrar</a>
-                <a href="../index.html" class="text-xs text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white pt-2">← Voltar à CodeNexus Impact</a>
+                <a href="#projeto" class="text-slate-700 dark:text-slate-300 hover:text-nexus-leaf py-2 font-medium">A Plataforma</a>
+                <a href="#mvv" class="text-slate-700 dark:text-slate-300 hover:text-nexus-leaf py-2 font-medium">Propósito</a>
+                <a href="#modulos" class="text-slate-700 dark:text-slate-300 hover:text-nexus-leaf py-2 font-medium">Módulos</a>
+                <a href="#tecnologia" class="text-slate-700 dark:text-slate-300 hover:text-nexus-leaf py-2 font-medium">Arquitetura</a>
+                <a href="#cadastro" class="bg-nexus-emerald text-white dark:text-nexus-dark rounded-full py-3 font-bold mt-2 shadow-md">Solicitar Demo / SaaS</a>
             </nav>
         </div>
     </header>
@@ -211,33 +172,28 @@
         <div class="container mx-auto px-4 md:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7">
-                    <div
-                        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white dark:bg-slate-800/80 border border-emerald-300 dark:border-nexus-emerald/40 text-emerald-800 dark:text-nexus-neon text-xs md:text-sm font-semibold mb-6 backdrop-blur-sm shadow-sm">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white dark:bg-slate-800/80 border border-emerald-300 dark:border-nexus-emerald/40 text-emerald-800 dark:text-nexus-neon text-xs md:text-sm font-semibold mb-6 backdrop-blur-sm shadow-sm">
                         <span class="relative flex h-2 w-2">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 dark:bg-nexus-neon opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600 dark:bg-nexus-neon"></span>
                         </span>
-                        Gestão Digital de Sementes e Mudas
+                        SaaS Multi-Tenant para Ecossistemas de Reflorestamento
                     </div>
                     <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-slate-900 dark:text-white">
-                        Tecnologia para Produção de <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-500 dark:from-nexus-emerald dark:to-nexus-neon">Mudas de Árvores.</span>
+                        Gestão Inteligente e Escalável de <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-500 dark:from-nexus-emerald dark:to-nexus-neon">Sementes e Mudas.</span>
                     </h1>
                     <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed font-light max-w-2xl">
-                        O <strong>Reflora-aê</strong> é o software de gestão participativa 100% online que organiza a produção de mudas nativas, o banco de sementes e a restauração de ecossistemas no semiárido.
+                        O <strong>Reflora EcoData</strong> é uma plataforma inteligente e validada no campo, focada na gestão ponta-a-ponta de sementes e mudas. Com uma arquitetura <em>multi-tenant</em> escalável, o sistema permite que múltiplos administradores atendam instituições, ONGs e governos, operando como um modelo SaaS que fortalece o ecossistema ambiental e gera receita recorrente.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#modulos"
-                            class="bg-nexus-emerald hover:bg-emerald-600 text-white dark:text-nexus-dark dark:hover:bg-emerald-400 font-bold py-4 px-8 rounded-full transition-all text-center shadow-[0_0_20px_rgba(16,185,129,0.25)] hover:shadow-[0_0_30px_rgba(16,185,129,0.45)] transform hover:-translate-y-1">
-                            Explorar Módulos
+                            class="bg-nexus-emerald hover:bg-emerald-600 text-white dark:text-nexus-dark dark:hover:bg-emerald-400 font-bold py-4 px-8 rounded-full transition-all text-center shadow-[0_0_20px_rgba(16,185,129,0.25)] transform hover:-translate-y-1">
+                            Explorar Módulos SaaS
                         </a>
                         <a href="#projeto"
                             class="bg-white hover:bg-slate-100 dark:bg-transparent border border-slate-300 dark:border-slate-600 hover:border-emerald-600 dark:hover:border-nexus-neon text-slate-800 dark:text-white font-medium py-4 px-8 rounded-full transition-all text-center flex items-center justify-center gap-2 group shadow-sm">
-                            Conhecer o Sistema
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="group-hover:translate-x-1 transition-transform" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
+                            Conhecer Arquitetura
+                            <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:translate-x-1 transition-transform" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14" />
                                 <path d="m12 5 7 7-7 7" />
                             </svg>
@@ -245,7 +201,7 @@
                     </div>
                 </div>
 
-                <!-- Hero Visual Card -->
+                <!-- Hero Visual Card (Multi-Tenant Network) -->
                 <div class="lg:col-span-5 relative">
                     <div class="relative w-full max-w-md mx-auto">
                         <div class="absolute inset-0 bg-gradient-to-br from-nexus-emerald/30 to-nexus-neon/20 rounded-3xl transform rotate-2 scale-105 filter blur-xl opacity-60"></div>
@@ -254,31 +210,30 @@
                                 <div class="flex items-center gap-3">
                                     <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-nexus-emerald/20 border border-emerald-300 dark:border-nexus-emerald/30 flex items-center justify-center text-emerald-800 dark:text-nexus-neon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M12 10a6 6 0 0 0-6-6H3v2a6 6 0 0 0 6 6h3Z"/>
-                                            <path d="M12 14a6 6 0 0 1 6-6h3v2a6 6 0 0 1-6 6h-3Z"/>
-                                            <path d="M12 2v20"/>
+                                            <rect width="7" height="9" x="3" y="3" rx="1"/>
+                                            <rect width="7" height="5" x="14" y="3" rx="1"/>
+                                            <rect width="7" height="9" x="14" y="12" rx="1"/>
+                                            <rect width="7" height="5" x="3" y="16" rx="1"/>
                                         </svg>
                                     </div>
                                     <div>
-                                        <p class="font-display font-bold text-sm text-slate-900 dark:text-white">Viveiro Florestal Ativo</p>
-                                        <p class="text-xs text-slate-500 dark:text-slate-400">Polo Semiárido • AFINK/UFPB</p>
+                                        <p class="font-display font-bold text-sm text-slate-900 dark:text-white">Rede Multi-Tenant Ativa</p>
+                                        <p class="text-xs text-slate-500 dark:text-slate-400">Governos, ONGs & Produtores</p>
                                     </div>
                                 </div>
-                                <span class="bg-emerald-100 text-emerald-800 dark:bg-nexus-emerald/20 dark:text-nexus-neon border border-emerald-300 dark:border-nexus-emerald/30 text-xs px-2.5 py-1 rounded-full font-semibold">Online</span>
+                                <span class="bg-emerald-100 text-emerald-800 dark:bg-nexus-emerald/20 dark:text-nexus-neon border border-emerald-300 dark:border-nexus-emerald/30 text-xs px-2.5 py-1 rounded-full font-semibold">SaaS Ativo</span>
                             </div>
 
                             <div class="grid grid-cols-2 gap-3 mb-5">
                                 <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 p-3.5 rounded-xl">
-                                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-1">Mudas Prontas</p>
-                                    <p class="text-xl font-bold font-display text-emerald-600 dark:text-nexus-emerald">14.250</p>
-                                    <p class="text-[10px] text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1 text-emerald-600 dark:text-emerald-400">
-                                        ↑ 18% este mês
-                                    </p>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-1">Instituições Clientes</p>
+                                    <p class="text-xl font-bold font-display text-emerald-600 dark:text-nexus-emerald">1 Tenant</p>
+                                    <p class="text-[10px] text-slate-500 dark:text-slate-400 mt-1">Multi-Admin isolado</p>
                                 </div>
                                 <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 p-3.5 rounded-xl">
-                                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-1">Taxa Germinação</p>
-                                    <p class="text-xl font-bold font-display text-emerald-600 dark:text-nexus-neon">92%</p>
-                                    <p class="text-[10px] text-slate-500 dark:text-slate-400 mt-1">Eficiência máxima</p>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-1">Mudas Rastreadas</p>
+                                    <p class="text-xl font-bold font-display text-emerald-600 dark:text-nexus-neon">1000</p>
+                                    <p class="text-[10px] text-slate-500 dark:text-slate-400 mt-1">Blockchain Ready</p>
                                 </div>
                             </div>
 
@@ -286,12 +241,12 @@
                                 <div class="flex justify-between items-center text-xs text-slate-700 dark:text-slate-300">
                                     <span class="flex items-center gap-1.5">
                                         <span class="w-2 h-2 rounded-full bg-emerald-500 dark:bg-nexus-neon"></span>
-                                        Espécies Nativas Catalogadas
+                                        Viveiros Homologados na Rede
                                     </span>
-                                    <span class="font-mono font-bold text-emerald-700 dark:text-nexus-neon">48 espécies</span>
+                                    <span class="font-mono font-bold text-emerald-100 dark:text-nexus-neon">1 viveiro</span>
                                 </div>
                                 <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
-                                    <div class="bg-gradient-to-r from-emerald-600 to-emerald-400 dark:from-nexus-emerald dark:to-nexus-neon h-2 rounded-full w-[85%]"></div>
+                                    <div class="bg-gradient-to-r from-emerald-600 to-emerald-400 dark:from-nexus-emerald dark:to-nexus-neon h-2 rounded-full w-[5%]"></div>
                                 </div>
                             </div>
                         </div>
@@ -301,59 +256,59 @@
         </div>
     </section>
 
-    <!-- Missão, Visão e Valores -->
+    <!-- Três Perfis / Arquitetura em Rede -->
     <section id="mvv" class="py-24 bg-white dark:bg-nexus-dark transition-colors duration-300">
         <div class="container mx-auto px-4 md:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Propósito Socioambiental</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Missão, Visão e Valores</h2>
-                <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg mt-3">Tecnologia social para regenerar biomas e empoderar viveiristas locais.</p>
+                <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Ecossistema Conectado</span>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Arquitetura Descentralizada por Perfis</h2>
+                <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg mt-3">O Reflora EcoData tem a ideia de escalar para conecta três atores essenciais com visões dedicadas e seguras.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Missão -->
+                <!-- Instituição -->
                 <div class="bg-slate-50 dark:bg-slate-800/80 p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-xl transition-all group">
                     <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-950/50 rounded-2xl flex items-center justify-center mb-6 text-nexus-leaf group-hover:scale-110 transition-transform">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="m4.93 4.93 4.24 4.24" />
-                            <path d="m14.83 9.17 4.24-4.24" />
-                            <path d="m14.83 14.83 4.24 4.24" />
-                            <path d="m9.17 14.83-4.24 4.24" />
-                            <circle cx="12" cy="12" r="4" />
+                            <path d="M6 22V12a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v10Z"/>
+                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                            <path d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/>
+                            <path d="M10 6h4"/>
+                            <path d="M12 2v4"/>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Missão</h3>
+                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Instituição (Admin)</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Promover a restauração ambiental e a gestão sustentável de viveiros florestais através de tecnologia social de ponta, fortalecendo a agricultura familiar no semiárido.
+                        ONGs, empresas ou governos que contratam o SaaS para gerenciar seus projetos, homologar viveiros parceiros e extrair relatórios ESG corporativos com governança total.
                     </p>
                 </div>
 
-                <!-- Visão -->
+                <!-- Produtor -->
                 <div class="bg-slate-50 dark:bg-slate-800/80 p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-xl transition-all group">
                     <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-950/50 rounded-2xl flex items-center justify-center mb-6 text-nexus-leaf group-hover:scale-110 transition-transform">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
-                            <circle cx="12" cy="12" r="3" />
+                            <path d="M12 10a6 6 0 0 0-6-6H3v2a6 6 0 0 0 6 6h3Z"/>
+                            <path d="M12 14a6 6 0 0 1 6-6h3v2a6 6 0 0 1-6 6h-3Z"/>
+                            <path d="M12 2v20"/>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Visão</h3>
+                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Produtor (Viveirista)</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Ser a plataforma digital de referência para a gestão participativa de sementes e mudas nativas, integrando o saber tradicional à inovação tecnológica.
+                        Focado na operação de campo via Web e Mobile (App offline-first). Gerencia o estoque de sementes, canteiros, germinação e a preparação dos lotes para distribuição.
                     </p>
                 </div>
 
-                <!-- Valores -->
+                <!-- Recebedor -->
                 <div class="bg-slate-50 dark:bg-slate-800/80 p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-xl transition-all group">
                     <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-950/50 rounded-2xl flex items-center justify-center mb-6 text-nexus-leaf group-hover:scale-110 transition-transform">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
-                            <path d="m9 12 2 2 4-4" />
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <path d="m9 11 3 3L22 4"/>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Valores</h3>
+                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Recebedor (Ponta Final)</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Sustentabilidade, transparência, inovação social, cooperação comunitária e preservação ativa da biodiversidade local.
+                        Responsável pelo plantio ou retirada das mudas. Valida a entrega no sistema e fecha o ciclo de rastreabilidade de ponta a ponta, comprovando o destino do ativo ambiental.
                     </p>
                 </div>
             </div>
@@ -364,10 +319,10 @@
     <section id="projeto" class="py-24 bg-slate-100/80 dark:bg-nexus-darker/60 border-t border-slate-200/60 dark:border-slate-800/60 transition-colors duration-300">
         <div class="container mx-auto px-4 md:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Arquitetura em Nuvem</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Gestão Inteligente do Semiárido</h2>
+                <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Escalabilidade B2B/B2G</span>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Pronto para Comercialização (SaaS)</h2>
                 <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg mt-3">
-                    Uma ferramenta conectada que traduz a complexidade da silvicultura em fluxos digitais intuitivos e integrados à nuvem.
+                    Assim como o bem-sucedido BeeScatinga, o Reflora EcoData foi desenhado para ser comercializado para diferentes instituições com isolamento seguro de dados e alto valor agregado.
                 </p>
             </div>
 
@@ -375,42 +330,40 @@
                 <div class="bg-white dark:bg-slate-800/80 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-200/80 dark:border-slate-700/60 group">
                     <div class="w-14 h-14 bg-emerald-50 dark:bg-emerald-950/40 rounded-2xl flex items-center justify-center mb-6 text-nexus-emerald group-hover:scale-110 transition-transform">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
-                            <path d="m12 13 3-3 3 3" />
-                            <path d="M15 10v6" />
+                            <rect width="18" height="18" x="3" y="3" rx="2"/>
+                            <path d="M3 9h18"/>
+                            <path d="M9 21V9"/>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Sincronização em Tempo Real</h3>
+                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Multi-Tenant Isolado</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Acesse o estoque de mudas e sementes de qualquer lugar com internet. Dados sempre seguros e atualizados na nuvem.
+                        Cada cliente (Prefeitura, ONG ou Empresa) possui sua própria instância isolada e segura, garantindo total privacidade e conformidade com a LGPD.
                     </p>
                 </div>
 
                 <div class="bg-white dark:bg-slate-800/80 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-200/80 dark:border-slate-700/60 group">
                     <div class="w-14 h-14 bg-emerald-50 dark:bg-emerald-950/40 rounded-2xl flex items-center justify-center mb-6 text-nexus-emerald group-hover:scale-110 transition-transform">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8" />
-                            <path d="m21 21-4.3-4.3" />
-                            <path d="M11 8v6" />
-                            <path d="M8 11h6" />
+                            <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/>
+                            <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/>
+                            <path d="M18 15h-3v3"/>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Rastreabilidade de Mudas</h3>
+                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Receita Recorrente (SaaS)</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Acompanhe a muda desde a colheita da semente na matriz até o plantio definitivo no campo com governança transparente.
+                        Modelo de licenciamento por assinatura com planos escaláveis baseados no volume de mudas gerenciadas e número de viveiros conectados.
                     </p>
                 </div>
 
                 <div class="bg-white dark:bg-slate-800/80 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-200/80 dark:border-slate-700/60 group">
                     <div class="w-14 h-14 bg-emerald-50 dark:bg-emerald-950/40 rounded-2xl flex items-center justify-center mb-6 text-nexus-emerald group-hover:scale-110 transition-transform">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 3v18h18" />
-                            <path d="m19 9-5 5-4-4-3 3" />
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Monitoramento de Produção</h3>
+                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Validação Real de Campo</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Relatórios automáticos de taxa de sobrevivência, germinação e crescimento das espécies arbóreas em dashboards visuais.
+                        Testado e aprovado com produtores reais. UX/UI otimizada para o campo, reduzindo barreiras de adoção digital e aumentando a eficiência operacional.
                     </p>
                 </div>
             </div>
@@ -421,9 +374,9 @@
     <section id="modulos" class="py-24 bg-white dark:bg-nexus-dark transition-colors duration-300">
         <div class="container mx-auto px-4 md:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Funcionalidades Integradas</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Módulos do Sistema</h2>
-                <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg mt-3">Ferramentas especializadas para cada etapa da cadeia produtiva florestal.</p>
+                <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Módulos Operacionais</span>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Tecnologia de Ponta a Ponta</h2>
+                <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg mt-3">Ferramentas especializadas para gerenciar sementes, viveiros e expedição com rastreabilidade.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -439,27 +392,17 @@
                         </div>
                         <h3 class="font-display text-2xl font-bold text-slate-900 dark:text-white mb-3">Gestão de Sementes</h3>
                         <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
-                            Controle rigoroso de variedades florestais. Registro de pureza, taxa de germinação e histórico de armazenamento por safra.
+                            Controle de lotes, pureza, taxa de germinação e histórico de armazenamento por safra e espécie nativa.
                         </p>
                     </div>
                     <ul class="space-y-3 pt-6 border-t border-slate-200 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-200">
                         <li class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                            </svg>
+                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
                             Catálogo de Espécies Nativas
                         </li>
                         <li class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                            </svg>
-                            Controle de Lotes e Matrizes
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                            </svg>
-                            Alertas Automáticos de Validade
+                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                            Controle Rigoroso de Matrizes
                         </li>
                     </ul>
                 </div>
@@ -470,73 +413,48 @@
                         <div class="w-14 h-14 bg-emerald-100 text-emerald-800 dark:bg-nexus-darker dark:text-nexus-neon rounded-2xl flex items-center justify-center mb-6 shadow-md group-hover:scale-105 transition-transform border border-emerald-300 dark:border-slate-700">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 22v-7l-2-2" />
-                                <path d="M17 8v.01" />
-                                <path d="M7 8v.01" />
                                 <path d="M12 3a7 7 0 0 0-7 7c0 4.5 4 7 7 7s7-2.5 7-7a7 7 0 0 0-7-7z" />
                             </svg>
                         </div>
-                        <h3 class="font-display text-2xl font-bold text-slate-900 dark:text-white mb-3">Viveiro de Mudas</h3>
+                        <h3 class="font-display text-2xl font-bold text-slate-900 dark:text-white mb-3">Viveiro & Manejo</h3>
                         <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
-                            Gestão completa do ciclo de vida das árvores, do semeio à rustificação. Ideal para reflorestamento comunitário e viveiros comerciais.
+                            Acompanhamento do ciclo de vida das mudas, do semeio à rustificação, integrado ao painel de controle do produtor.
                         </p>
                     </div>
                     <ul class="space-y-3 pt-6 border-t border-slate-200 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-200">
                         <li class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                            </svg>
+                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
                             Fichas de Produção Diária
                         </li>
                         <li class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                            </svg>
-                            Gestão de Insumos e Substrato
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                            </svg>
-                            Taxa de Sobrevivência em Campo
+                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                            Taxa de Sobrevivência
                         </li>
                     </ul>
                 </div>
 
-                <!-- Módulo 3: Canteiros -->
+                <!-- Módulo 3: Rastreabilidade / ESG -->
                 <div class="bg-slate-50 dark:bg-slate-800/80 p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700/60 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
                     <div>
                         <div class="w-14 h-14 bg-emerald-100 text-emerald-800 dark:bg-nexus-darker dark:text-nexus-neon rounded-2xl flex items-center justify-center mb-6 shadow-md group-hover:scale-105 transition-transform border border-emerald-300 dark:border-slate-700">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect width="18" height="18" x="3" y="3" rx="2" />
-                                <path d="M3 9h18" />
-                                <path d="M3 15h18" />
-                                <path d="M9 3v18" />
-                                <path d="M15 3v18" />
+                                <path d="M3 3v18h18" />
+                                <path d="m19 9-5 5-4-4-3 3" />
                             </svg>
                         </div>
-                        <h3 class="font-display text-2xl font-bold text-slate-900 dark:text-white mb-3">Gestão de Canteiros</h3>
+                        <h3 class="font-display text-2xl font-bold text-slate-900 dark:text-white mb-3">Dashboard ESG</h3>
                         <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
-                            Mapeamento e planejamento de ocupação espacial. Visualize a disposição e capacidade das mudas por lote e espécie.
+                            Relatórios automáticos de impacto ambiental, conversão ecológica e rastreabilidade pronta para auditoria externa.
                         </p>
                     </div>
                     <ul class="space-y-3 pt-6 border-t border-slate-200 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-200">
                         <li class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                            </svg>
-                            Layout Visual de Canteiros
+                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                            Blockchain Ready
                         </li>
                         <li class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                            </svg>
-                            Cronograma de Manejo e Rega
-                        </li>
-                        <li class="flex items-center gap-2.5">
-                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                            </svg>
-                            Histórico de Rotação por Espécie
+                            <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                            Métricas para Investidores ESG
                         </li>
                     </ul>
                 </div>
@@ -544,40 +462,40 @@
         </div>
     </section>
 
-    <!-- Tecnologia com Propósito -->
+    <!-- Tecnologia e Stack -->
     <section id="tecnologia" class="py-20 bg-slate-900 text-white dark:bg-nexus-darker border-t border-b border-slate-800 relative overflow-hidden transition-colors duration-300">
         <div class="container mx-auto px-4 md:px-8 text-center relative z-10">
-            <span class="text-nexus-neon font-bold tracking-wider uppercase text-xs">Stack Tecnológica</span>
-            <h2 class="font-display text-3xl md:text-4xl font-bold mt-2 mb-4">Tecnologia com Propósito</h2>
+            <span class="text-nexus-neon font-bold tracking-wider uppercase text-xs">Stack Tecnológica & Arquitetura</span>
+            <h2 class="font-display text-3xl md:text-4xl font-bold mt-2 mb-4">Tecnologia Escalável e Robusta</h2>
             <p class="text-slate-300 max-w-2xl mx-auto text-base md:text-lg mb-8 font-light">
-                Utilizamos infraestrutura em nuvem e tecnologias modernas para garantir que o software seja leve, ágil e seguro em qualquer dispositivo.
+                Arquitetura em nuvem multi-tenant desenvolvida para suportar alta volumetria de dados com sincronização em tempo real e modo offline-first no campo.
             </p>
             <div class="flex flex-wrap justify-center gap-3 max-w-xl mx-auto">
-                <span class="bg-slate-800/80 border border-slate-700 text-slate-200 px-5 py-2 rounded-full font-medium text-sm">React</span>
-                <span class="bg-slate-800/80 border border-slate-700 text-slate-200 px-5 py-2 rounded-full font-medium text-sm">Node.js</span>
+                <span class="bg-slate-800/80 border border-slate-700 text-slate-200 px-5 py-2 rounded-full font-medium text-sm">Multi-Tenant SaaS</span>
+                <span class="bg-slate-800/80 border border-slate-700 text-slate-200 px-5 py-2 rounded-full font-medium text-sm">React / Node.js</span>
                 <span class="bg-slate-800/80 border border-slate-700 text-slate-200 px-5 py-2 rounded-full font-medium text-sm">Cloud Database</span>
-                <span class="bg-slate-800/80 border border-nexus-emerald/40 text-nexus-neon px-5 py-2 rounded-full font-medium text-sm">Real-time Sync</span>
+                <span class="bg-slate-800/80 border border-nexus-emerald/40 text-nexus-neon px-5 py-2 rounded-full font-medium text-sm">Blockchain Ready</span>
             </div>
         </div>
     </section>
 
-    <!-- Formulário de Contato / Cadastro -->
+    <!-- Formulário de Contato / Solicitar SaaS -->
     <section id="cadastro" class="py-14 sm:py-20 md:py-24 bg-slate-100/80 dark:bg-nexus-darker/60 relative transition-colors duration-300 border-t border-slate-200/60 dark:border-slate-800/60">
         <div class="container mx-auto px-3 sm:px-4 md:px-8">
             <div class="max-w-3xl mx-auto bg-white dark:bg-slate-800/90 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12 shadow-xl border border-slate-200 dark:border-slate-700 transition-colors duration-300">
                 <div class="text-center mb-6 sm:mb-8">
-                    <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Participe da Rede</span>
-                    <h2 class="font-display text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Entre em Contato</h2>
+                    <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Leve o Reflora EcoData para sua Instituição</span>
+                    <h2 class="font-display text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Solicite uma Demonstração</h2>
                     <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm mt-2 max-w-lg mx-auto">
-                        Envie sua mensagem ou registre seu interesse para fazer parte da rede Reflora-aê.
+                        Preencha seus dados para conversarmos sobre a implementação do SaaS na sua ONG, governo ou empresa.
                     </p>
                 </div>
 
                 <form id="reflora-form" action="#" method="POST" class="space-y-4 sm:space-y-6">
-                    <input type="hidden" name="sheetName" value="Reflora">
-                    <input type="hidden" name="repositorio" value="https://github.com/cinthialindolfo/SiteReflora-ae">
+                    <input type="hidden" name="sheetName" value="RefloraEcoData">
+                    <input type="hidden" name="repositorio" value="RefloraEcoData-SaaS">
 
-                    <!-- Campo Honeypot anti-spam (invisível para humanos) -->
+                    <!-- Campo Honeypot anti-spam -->
                     <div class="opacity-0 absolute -z-10 w-0 h-0 overflow-hidden select-none pointer-events-none" aria-hidden="true">
                         <label for="website">Não preencha este campo</label>
                         <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
@@ -585,41 +503,40 @@
 
                     <div>
                         <label for="nome" class="block text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-200 mb-1.5 sm:mb-2">Nome Completo *</label>
-                        <input type="text" id="nome" name="Nome" placeholder="Seu nome completo" required
-                            class="w-full px-3.5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-nexus-emerald focus:border-nexus-emerald outline-none transition-all bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white text-sm sm:text-base placeholder:text-slate-400 dark:placeholder:text-slate-500">
+                        <input type="text" id="nome" name="Nome" placeholder="Seu nome" required
+                            class="w-full px-3.5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-nexus-emerald focus:border-nexus-emerald outline-none transition-all bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white text-sm sm:text-base">
                     </div>
 
                     <div>
                         <label for="contato" class="block text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-200 mb-1.5 sm:mb-2">E-mail ou WhatsApp *</label>
                         <input type="text" id="contato" name="Contato" placeholder="seu@email.com ou (83) 99999-9999" required
-                            class="w-full px-3.5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-nexus-emerald focus:border-nexus-emerald outline-none transition-all bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white text-sm sm:text-base placeholder:text-slate-400 dark:placeholder:text-slate-500">
+                            class="w-full px-3.5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-nexus-emerald focus:border-nexus-emerald outline-none transition-all bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white text-sm sm:text-base">
                     </div>
 
                     <div>
-                        <label for="interesse" class="block text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-200 mb-1.5 sm:mb-2">Assunto / Interesse *</label>
+                        <label for="interesse" class="block text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-200 mb-1.5 sm:mb-2">Perfil / Interesse *</label>
                         <select id="interesse" name="Interesse"
                             class="w-full px-3.5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-nexus-emerald focus:border-nexus-emerald outline-none transition-all bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white text-sm sm:text-base">
-                            <option value="Banco de Sementes">Tenho Banco de Sementes</option>
-                            <option value="Viveiro">Tenho/Quero criar um Viveiro de Mudas</option>
-                            <option value="Parceria">Quero ser um parceiro técnico</option>
-                            <option value="Dúvidas">Outras informações</option>
+                            <option value="Instituição / Governo">Represento Instituição / Governo / Prefeitura</option>
+                            <option value="ONG / Projeto ESG">Represento ONG ou Projeto de Restauração</option>
+                            <option value="Produtor / Viveirista">Sou Produtor de Mudas / Viveirista</option>
+                            <option value="Parceria Comercial">Quero revender/distribuir o SaaS</option>
                         </select>
                     </div>
 
                     <button type="submit" id="submit-btn"
-                        class="w-full bg-nexus-emerald hover:bg-emerald-600 text-white dark:text-nexus-dark dark:hover:bg-emerald-400 font-bold py-3.5 sm:py-4 px-6 sm:px-8 rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-sm sm:text-base cursor-pointer">
-                        <span>Enviar Mensagem</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="22" x2="11" y1="2" y2="13" />
-                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                        class="w-full bg-nexus-emerald hover:bg-emerald-600 text-white dark:text-nexus-dark dark:hover:bg-emerald-400 font-bold py-3.5 sm:py-4 px-6 rounded-xl transition-all shadow-md flex items-center justify-center gap-2 text-sm sm:text-base cursor-pointer">
+                        <span>Enviar Solicitação</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" x2="11" y1="2" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
                         </svg>
                     </button>
 
                     <div id="form-message" class="hidden p-4 rounded-xl text-sm font-medium text-center mt-4"></div>
 
                     <p class="text-xs text-slate-500 dark:text-slate-400 text-center mt-2">
-                        Os seus dados estão seguros conosco. Não compartilhamos informações com terceiros.
+                        Seus dados estão seguros. Garantimos confidencialidade e conformidade com a LGPD.
                     </p>
                 </form>
             </div>
@@ -627,29 +544,28 @@
     </section>
 
     <!-- Footer -->
-    <footer id="afink" class="bg-nexus-darker py-10 sm:py-12 text-slate-400 border-t border-slate-800">
+    <footer class="bg-nexus-darker py-10 sm:py-12 text-slate-400 border-t border-slate-800">
         <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
             <div>
                 <p class="font-display font-bold text-white text-lg flex items-center justify-center md:justify-start gap-1">
-                    <span>REFLORA-</span><span class="text-nexus-neon">AÊ</span>
+                    <span>REFLORA</span><span class="text-nexus-neon">ECODATA</span>
                 </p>
-                <p class="text-sm text-slate-400 mt-1">Uma iniciativa UFPB em parceria com a AFINK.</p>
-                <p class="text-xs text-slate-500 mt-0.5">Araruna/PB • Rio Tinto/PB • João Pessoa/PB</p>
+                <p class="text-sm text-slate-400 mt-1">Plataforma SaaS Multi-Tenant para Ecossistemas de Reflorestamento.</p>
                 <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 sm:gap-4 mt-3 text-xs text-slate-400">
-                    <a href="mailto:codenexusimpact@gmail.com" class="hover:text-nexus-neon transition-colors break-all sm:break-normal">codenexusimpact@gmail.com</a>
-                    <span class="hidden sm:inline">•</span>
+                    <a href="mailto:codenexusimpact@gmail.com" class="hover:text-nexus-neon transition-colors">codenexusimpact@gmail.com</a>
+                    <span>•</span>
                     <a href="https://wa.me/5583981758363" target="_blank" rel="noopener noreferrer" class="hover:text-nexus-neon transition-colors">+55 (83) 98175-8363</a>
                 </div>
             </div>
 
             <div class="text-xs text-slate-500 text-center md:text-right space-y-1">
-                <p>&copy; 2026 Reflora-aê. Tecnologia para o Semiárido.</p>
-                <p class="text-slate-400">Desenvolvido por <a href="../index.html" class="text-nexus-neon font-semibold hover:underline">CodeNexus Impact</a> | <a href="https://github.com/CodeNexusImpact" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white">GitHub</a></p>
+                <p>&copy; 2026 Reflora EcoData. Todos os direitos reservados.</p>
+                <p class="text-slate-400">Desenvolvido por <a href="#" class="text-nexus-neon font-semibold hover:underline">CodeNexus Impact</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- Script de envio e interatividade -->
+    <!-- Script de interatividade -->
     <script src="script.js"></script>
 </body>
 

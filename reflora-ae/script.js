@@ -13,7 +13,6 @@ if (form && btn && msg) {
         // 1. Verificação Anti-Spam (Honeypot)
         const honeyField = form.querySelector('input[name="website"]');
         if (honeyField && honeyField.value.trim() !== '') {
-            // Bot detectado: simula sucesso e descarta silenciosamente
             form.reset();
             msg.style.display = 'block';
             msg.className = 'block p-4 rounded-lg text-sm font-medium text-center mt-4 bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-200 border border-emerald-300 dark:border-emerald-700';
@@ -41,24 +40,22 @@ if (form && btn && msg) {
             body: data
         })
             .then(() => {
-                // Sucesso
                 msg.style.display = 'block';
                 msg.className = 'block p-4 rounded-lg text-sm font-medium text-center mt-4 bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-200 border border-emerald-300 dark:border-emerald-700';
-                msg.innerText = 'Sucesso! Recebemos seus dados e entraremos em contato em breve.';
+                msg.innerText = 'Sucesso! Recebemos sua solicitação e entraremos em contato em breve.';
 
                 form.reset();
                 btn.disabled = false;
                 btn.classList.remove('opacity-70', 'cursor-not-allowed');
                 if (btnText) {
-                    btnText.innerText = 'Enviar Mensagem';
+                    btnText.innerText = 'Enviar Solicitação';
                 } else {
-                    btn.innerText = 'Enviar Mensagem';
+                    btn.innerText = 'Enviar Solicitação';
                 }
 
                 setTimeout(() => { msg.style.display = 'none'; }, 5000);
             })
             .catch(error => {
-                // Erro
                 console.error('Erro:', error);
                 msg.style.display = 'block';
                 msg.className = 'block p-4 rounded-lg text-sm font-medium text-center mt-4 bg-rose-100 dark:bg-rose-950/80 text-rose-800 dark:text-rose-200 border border-rose-300 dark:border-rose-700';
@@ -67,9 +64,9 @@ if (form && btn && msg) {
                 btn.disabled = false;
                 btn.classList.remove('opacity-70', 'cursor-not-allowed');
                 if (btnText) {
-                    btnText.innerText = 'Enviar Mensagem';
+                    btnText.innerText = 'Enviar Solicitação';
                 } else {
-                    btn.innerText = 'Enviar Mensagem';
+                    btn.innerText = 'Enviar Solicitação';
                 }
             });
     });
