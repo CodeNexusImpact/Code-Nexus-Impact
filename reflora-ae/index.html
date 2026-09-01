@@ -93,11 +93,21 @@
     <!-- Header / Navbar -->
     <header id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/95 text-slate-900 border-b border-slate-200/80 shadow-sm dark:bg-nexus-darker/90 dark:text-white dark:border-slate-800 backdrop-blur-md py-3.5">
         <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
-            <a href="#" class="font-display font-bold text-2xl tracking-tight flex items-center gap-2.5 group">
-                <img src="./assets/favicon.svg" alt="Reflora EcoData" class="w-8 h-8 rounded-lg shadow-sm group-hover:scale-105 transition-transform">
-                <div class="flex items-center text-slate-900 dark:text-white"><span>REFLORA</span><span class="text-nexus-leaf dark:text-nexus-neon ml-1">ECODATA</span></div>
-                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-nexus-emerald/20 dark:text-nexus-neon border border-emerald-300 dark:border-nexus-emerald/30 ml-1 hidden sm:inline-block">SaaS Multi-Tenant</span>
-            </a>
+            <div class="flex items-center gap-3 sm:gap-4">
+                <!-- Botão de Voltar para CodeNexus Impact -->
+                <a href="../" class="flex items-center gap-1.5 text-slate-500 hover:text-nexus-leaf dark:text-slate-400 dark:hover:text-nexus-neon transition-colors" title="Voltar para CodeNexus">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m15 18-6-6 6-6"/>
+                    </svg>
+                    <span class="hidden md:inline text-sm font-medium">Voltar</span>
+                </a>
+
+                <a href="#" class="font-display font-bold text-xl sm:text-2xl tracking-tight flex items-center gap-2 sm:gap-2.5 group">
+                    <img src="./assets/favicon.svg" alt="Reflora EcoData" class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg shadow-sm group-hover:scale-105 transition-transform">
+                    <div class="flex items-center text-slate-900 dark:text-white"><span>REFLORA</span><span class="text-nexus-leaf dark:text-nexus-neon ml-1">ECODATA</span></div>
+                    <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-nexus-emerald/20 dark:text-nexus-neon border border-emerald-300 dark:border-nexus-emerald/30 ml-1 hidden lg:inline-block">SaaS Multi-Tenant</span>
+                </a>
+            </div>
 
             <nav class="hidden md:flex items-center gap-7 font-medium text-sm">
                 <a href="#projeto" class="text-slate-600 hover:text-nexus-leaf dark:text-slate-300 dark:hover:text-nexus-neon transition-colors">A Plataforma</a>
@@ -149,6 +159,7 @@
         <!-- Menu Mobile -->
         <div id="mobile-nav" class="hidden md:hidden absolute top-full left-0 w-full bg-white dark:bg-nexus-darker border-t border-slate-200 dark:border-slate-800 shadow-2xl transition-all">
             <nav class="flex flex-col p-6 text-center gap-4">
+
                 <button onclick="toggleTheme()" type="button" class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-medium text-sm shadow-sm">
                     <span class="block dark:hidden">🌙 Alternar para Modo Escuro</span>
                     <span class="hidden dark:block">☀️ Alternar para Modo Claro</span>
@@ -180,10 +191,10 @@
                         SaaS Multi-Tenant para Ecossistemas de Reflorestamento
                     </div>
                     <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-slate-900 dark:text-white">
-                        Gestão Inteligente e Escalável de <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-500 dark:from-nexus-emerald dark:to-nexus-neon">Sementes e Mudas.</span>
+                        Plataforma integrada para rastreabilidade de <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-500 dark:from-nexus-emerald dark:to-nexus-neon">sementes e mudas.</span>
                     </h1>
                     <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed font-light max-w-2xl">
-                        O <strong>Reflora EcoData</strong> é uma plataforma inteligente e validada no campo, focada na gestão ponta-a-ponta de sementes e mudas. Com uma arquitetura <em>multi-tenant</em> escalável, o sistema permite que múltiplos administradores atendam instituições, ONGs e governos, operando como um modelo SaaS que fortalece o ecossistema ambiental e gera receita recorrente.
+                        O <strong>Reflora EcoData</strong> centraliza a gestão de viveiros e iniciativas de restauração florestal. Desenvolvido com arquitetura <em>multi-tenant</em>, o sistema atende órgãos públicos, ONGs e empresas de forma simultânea, garantindo segurança, isolamento de dados e alta disponibilidade.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#modulos"
@@ -232,7 +243,7 @@
                                 </div>
                                 <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 p-3.5 rounded-xl">
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mb-1">Mudas Rastreadas</p>
-                                    <p class="text-xl font-bold font-display text-emerald-600 dark:text-nexus-neon">1000</p>
+                                    <p class="text-xl font-bold font-display text-emerald-600 dark:text-neon">1000</p>
                                     <p class="text-[10px] text-slate-500 dark:text-slate-400 mt-1">Blockchain Ready</p>
                                 </div>
                             </div>
@@ -243,7 +254,7 @@
                                         <span class="w-2 h-2 rounded-full bg-emerald-500 dark:bg-nexus-neon"></span>
                                         Viveiros Homologados na Rede
                                     </span>
-                                    <span class="font-mono font-bold text-emerald-100 dark:text-nexus-neon">1 viveiro</span>
+                                    <span class="font-mono font-bold text-emerald-600 dark:text-nexus-neon">1 viveiro</span>
                                 </div>
                                 <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
                                     <div class="bg-gradient-to-r from-emerald-600 to-emerald-400 dark:from-nexus-emerald dark:to-nexus-neon h-2 rounded-full w-[5%]"></div>
@@ -261,8 +272,8 @@
         <div class="container mx-auto px-4 md:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Ecossistema Conectado</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Arquitetura Descentralizada por Perfis</h2>
-                <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg mt-3">O Reflora EcoData tem a ideia de escalar para conecta três atores essenciais com visões dedicadas e seguras.</p>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Estrutura Operacional por Perfis</h2>
+                <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg mt-3">A plataforma integra três agentes essenciais do processo de reflorestamento com ambientes direcionados.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -277,9 +288,9 @@
                             <path d="M12 2v4"/>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Instituição (Admin)</h3>
+                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Instituição (Gestão)</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        ONGs, empresas ou governos que contratam o SaaS para gerenciar seus projetos, homologar viveiros parceiros e extrair relatórios ESG corporativos com governança total.
+                        Órgãos públicos, empresas e organizações coordenam múltiplos projetos de restauração, homologam viveiros parceiros e acompanham indicadores consolidados de impacto.
                     </p>
                 </div>
 
@@ -294,7 +305,7 @@
                     </div>
                     <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Produtor (Viveirista)</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Focado na operação de campo via Web e Mobile (App offline-first). Gerencia o estoque de sementes, canteiros, germinação e a preparação dos lotes para distribuição.
+                        Responsável pelo registro de sementes, controle de canteiros, germinação e acompanhamento diário do desenvolvimento das mudas até a expedição.
                     </p>
                 </div>
 
@@ -306,9 +317,9 @@
                             <path d="m9 11 3 3L22 4"/>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Recebedor (Ponta Final)</h3>
+                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Recebedor (Destino Final)</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Responsável pelo plantio ou retirada das mudas. Valida a entrega no sistema e fecha o ciclo de rastreabilidade de ponta a ponta, comprovando o destino do ativo ambiental.
+                        Encarregado do recebimento em campo e efetivação do plantio, validando a entrega e concluindo o ciclo de rastreabilidade do ativo ambiental.
                     </p>
                 </div>
             </div>
@@ -319,10 +330,10 @@
     <section id="projeto" class="py-24 bg-slate-100/80 dark:bg-nexus-darker/60 border-t border-slate-200/60 dark:border-slate-800/60 transition-colors duration-300">
         <div class="container mx-auto px-4 md:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Escalabilidade B2B/B2G</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Pronto para Comercialização (SaaS)</h2>
+                <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Modelo de Negócio e Escala</span>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Tecnologia Pronta para Licenciamento</h2>
                 <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg mt-3">
-                    Assim como o bem-sucedido BeeScatinga, o Reflora EcoData foi desenhado para ser comercializado para diferentes instituições com isolamento seguro de dados e alto valor agregado.
+                    Projetado para ganhar escala no mercado, oferecendo uma infraestrutura segura e flexível para instituições, empresas e governos.
                 </p>
             </div>
 
@@ -335,9 +346,9 @@
                             <path d="M9 21V9"/>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Multi-Tenant Isolado</h3>
+                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Isolamento Multi-Tenant</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Cada cliente (Prefeitura, ONG ou Empresa) possui sua própria instância isolada e segura, garantindo total privacidade e conformidade com a LGPD.
+                        Cada contratante opera em ambiente segregado, assegurando confidencialidade operacional e total alinhamento às diretrizes da LGPD.
                     </p>
                 </div>
 
@@ -351,7 +362,7 @@
                     </div>
                     <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Receita Recorrente (SaaS)</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Modelo de licenciamento por assinatura com planos escaláveis baseados no volume de mudas gerenciadas e número de viveiros conectados.
+                        Modelo de comercialização por assinatura adaptável conforme o volume de mudas monitoradas e a quantidade de viveiros integrados.
                     </p>
                 </div>
 
@@ -361,9 +372,9 @@
                             <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
                         </svg>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Validação Real de Campo</h3>
+                    <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3">Eficiência em Campo</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                        Testado e aprovado com produtores reais. UX/UI otimizada para o campo, reduzindo barreiras de adoção digital e aumentando a eficiência operacional.
+                        Interface validada com operadores reais, simplificando o registro de informações e assegurando produtividade mesmo em áreas remotas.
                     </p>
                 </div>
             </div>
@@ -375,8 +386,8 @@
         <div class="container mx-auto px-4 md:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Módulos Operacionais</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Tecnologia de Ponta a Ponta</h2>
-                <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg mt-3">Ferramentas especializadas para gerenciar sementes, viveiros e expedição com rastreabilidade.</p>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Visão Geral da Solução</h2>
+                <p class="text-slate-600 dark:text-slate-300 text-base md:text-lg mt-3">Ferramentas especializadas para gerenciar o fluxo completo de propagação vegetal.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -392,7 +403,7 @@
                         </div>
                         <h3 class="font-display text-2xl font-bold text-slate-900 dark:text-white mb-3">Gestão de Sementes</h3>
                         <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
-                            Controle de lotes, pureza, taxa de germinação e histórico de armazenamento por safra e espécie nativa.
+                            Controle rigoroso de lotes, índices de pureza, taxas de germinação e histórico de armazenamento por safra e espécies nativas.
                         </p>
                     </div>
                     <ul class="space-y-3 pt-6 border-t border-slate-200 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-200">
@@ -402,7 +413,7 @@
                         </li>
                         <li class="flex items-center gap-2.5">
                             <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-                            Controle Rigoroso de Matrizes
+                            Rastreabilidade de Matrizes
                         </li>
                     </ul>
                 </div>
@@ -418,7 +429,7 @@
                         </div>
                         <h3 class="font-display text-2xl font-bold text-slate-900 dark:text-white mb-3">Viveiro & Manejo</h3>
                         <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
-                            Acompanhamento do ciclo de vida das mudas, do semeio à rustificação, integrado ao painel de controle do produtor.
+                            Monitoramento detalhado da evolução das mudas, do semeio à rustificação, integrado ao painel gerencial.
                         </p>
                     </div>
                     <ul class="space-y-3 pt-6 border-t border-slate-200 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-200">
@@ -428,7 +439,7 @@
                         </li>
                         <li class="flex items-center gap-2.5">
                             <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-                            Taxa de Sobrevivência
+                            Métricas de Sobrevivência
                         </li>
                     </ul>
                 </div>
@@ -444,17 +455,17 @@
                         </div>
                         <h3 class="font-display text-2xl font-bold text-slate-900 dark:text-white mb-3">Dashboard ESG</h3>
                         <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
-                            Relatórios automáticos de impacto ambiental, conversão ecológica e rastreabilidade pronta para auditoria externa.
+                            Geração automática de relatórios de impacto socioambiental, garantindo total conformidade para auditorias.
                         </p>
                     </div>
                     <ul class="space-y-3 pt-6 border-t border-slate-200 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-200">
                         <li class="flex items-center gap-2.5">
                             <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-                            Blockchain Ready
+                            Pronto para Blockchain
                         </li>
                         <li class="flex items-center gap-2.5">
                             <svg class="w-4 h-4 text-nexus-leaf shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-                            Métricas para Investidores ESG
+                            Indicadores Corporativos
                         </li>
                     </ul>
                 </div>
@@ -463,18 +474,19 @@
     </section>
 
     <!-- Tecnologia e Stack -->
-    <section id="tecnologia" class="py-20 bg-slate-900 text-white dark:bg-nexus-darker border-t border-b border-slate-800 relative overflow-hidden transition-colors duration-300">
+  
+    <section id="tecnologia" class="py-20 bg-slate-50 text-slate-900 dark:bg-nexus-darker dark:text-white border-t border-b border-slate-200 dark:border-slate-800 relative overflow-hidden transition-colors duration-300">
         <div class="container mx-auto px-4 md:px-8 text-center relative z-10">
-            <span class="text-nexus-neon font-bold tracking-wider uppercase text-xs">Stack Tecnológica & Arquitetura</span>
-            <h2 class="font-display text-3xl md:text-4xl font-bold mt-2 mb-4">Tecnologia Escalável e Robusta</h2>
-            <p class="text-slate-300 max-w-2xl mx-auto text-base md:text-lg mb-8 font-light">
-                Arquitetura em nuvem multi-tenant desenvolvida para suportar alta volumetria de dados com sincronização em tempo real e modo offline-first no campo.
+            <span class="text-nexus-leaf dark:text-nexus-neon font-bold tracking-wider uppercase text-xs">Stack Tecnológica & Arquitetura</span>
+            <h2 class="font-display text-3xl md:text-4xl font-bold mt-2 mb-4 text-slate-900 dark:text-white">Infraestrutura Robusta e Escalável</h2>
+            <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-base md:text-lg mb-8 font-light">
+                Arquitetura moderna baseada em nuvem, concebida para alta disponibilidade, segurança de dados e suporte a operações em campo.
             </p>
             <div class="flex flex-wrap justify-center gap-3 max-w-xl mx-auto">
-                <span class="bg-slate-800/80 border border-slate-700 text-slate-200 px-5 py-2 rounded-full font-medium text-sm">Multi-Tenant SaaS</span>
-                <span class="bg-slate-800/80 border border-slate-700 text-slate-200 px-5 py-2 rounded-full font-medium text-sm">React / Node.js</span>
-                <span class="bg-slate-800/80 border border-slate-700 text-slate-200 px-5 py-2 rounded-full font-medium text-sm">Cloud Database</span>
-                <span class="bg-slate-800/80 border border-nexus-emerald/40 text-nexus-neon px-5 py-2 rounded-full font-medium text-sm">Blockchain Ready</span>
+                <span class="bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 px-5 py-2 rounded-full font-medium text-sm shadow-sm transition-colors">Multi-Tenant SaaS</span>
+                <span class="bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 px-5 py-2 rounded-full font-medium text-sm shadow-sm transition-colors">React / Node.js</span>
+                <span class="bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 px-5 py-2 rounded-full font-medium text-sm shadow-sm transition-colors">Cloud Database</span>
+                <span class="bg-emerald-50 dark:bg-slate-800/80 border border-emerald-200 dark:border-nexus-emerald/40 text-emerald-700 dark:text-nexus-neon px-5 py-2 rounded-full font-medium text-sm shadow-sm transition-colors">Blockchain Ready</span>
             </div>
         </div>
     </section>
@@ -487,7 +499,7 @@
                     <span class="text-nexus-leaf font-bold tracking-wider uppercase text-xs">Leve o Reflora EcoData para sua Instituição</span>
                     <h2 class="font-display text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-1">Solicite uma Demonstração</h2>
                     <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm mt-2 max-w-lg mx-auto">
-                        Preencha seus dados para conversarmos sobre a implementação do SaaS na sua ONG, governo ou empresa.
+                        Preencha seus dados para conversarmos sobre a implementação da plataforma em sua organização.
                     </p>
                 </div>
 
